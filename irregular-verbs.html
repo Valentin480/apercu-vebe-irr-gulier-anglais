@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbes Irréguliers - Anglix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="mode-select-screen" class="screen active">
+        <h2>Sélectionnez les modes de jeu</h2>
+        <div class="mode-buttons">
+            <button id="mode-translation" class="mode-button">Traduction</button>
+            <button id="mode-base" class="mode-button">Base verbale</button>
+            <button id="mode-past" class="mode-button">Participe passé</button>
+        </div>
+        <h2>Sélectionnez le nombre de questions</h2>
+        <input type="range" id="question-count" min="5" max="30" value="10" class="slider">
+        <span id="question-count-display">10</span> Questions
+        <br><br>
+        <button id="play-button" class="play-button">Jouer</button>
+    </div>
+
+    <div id="game-container" class="screen">
+        <h2 id="question"></h2>
+        <div id="answer-buttons"></div>
+        <p id="lives">Vies restantes : <span id="lives-count"></span></p>
+        <div id="progress-bar"></div>
+    </div>
+
+    <div id="game-over-screen" class="screen">
+        <h2 id="game-over-message"></h2>
+        <button id="restart-button">Recommencer</button>
+    </div>
+
+    <div id="death-screen" class="screen">
+        <h2>Tu as perdu 😢</h2>
+        <p>Ne t'inquiète pas, tu peux réessayer et t'améliorer !</p>
+        <button id="death-restart-button">Recommencer</button>
+    </div>
+
+    <div id="victory-screen" class="screen">
+        <h2>Bravo 🎉</h2>
+        <p id="victory-message"></p>
+        <button id="victory-restart-button">Recommencer</button>
+    </div>
+
+    
+    <script src="verbe irrégulier.js"></script>
+</body>
+</html>
